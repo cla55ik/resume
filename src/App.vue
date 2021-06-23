@@ -1,15 +1,17 @@
 <template>
   
   <Head />
+  <Resume/>
 </template>
 
 <script>
 import Head from '@/components/Head.vue'
+import Resume from '@/components/Resume.vue'
 
 export default {
   name: 'App',
   components: {
-    Head
+    Head, Resume
   }
 }
 </script>

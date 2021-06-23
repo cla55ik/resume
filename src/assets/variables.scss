@@ -3,6 +3,7 @@ $main-bg: #272C34;
 $sub-title-c: #E5E5E5;
 $text-c: #CBCBCB;
 $main-title-c: #EB626B;
+$orange:#CE864B;
 
 %d-flex {
     display: flex;
@@ -26,3 +27,127 @@ $main-title-c: #EB626B;
         
     }
 }
+
+%resume-title{
+    
+    color: $main-title-c;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @media screen and (min-width:1200px) {
+        
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 25px;
+    }
+}
+
+%resume-title-before{
+    margin-top:35px;
+    color: $sub-title-c;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    @media screen and (min-width:1200px) {
+        margin-top:50px;
+        font-size: 24px;
+        line-height: 33px;
+        
+    }
+}
+
+%resume-experience-period{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CBCBCB;
+
+    @media screen and (min-width:1200px) {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+%resume-experience-employer{
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $sub-title-c;
+
+    @media screen and (min-width:1200px) {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+%resume-experience-description{
+    
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $sub-title-c;
+
+    @media screen and (min-width:1200px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+
+%sub-title-resume{
+    
+    color: $sub-title-c;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    
+    @media screen and (min-width:1200px) {
+        
+        font-size: 20px;
+        line-height: 27px;
+        
+    }
+}
+
+
+%skills{
+    color: $sub-title-c;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    padding: 7px 22px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    margin-right: 25px;
+
+}
+
+%margin-10-15{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 15px;
+        
+    }
+}
+
+%margin-50-25{
+    margin-bottom: 25px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+        
+    }
+}
+
+
+
