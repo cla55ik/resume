@@ -1,1 +1,20 @@
 $main-bg: #272C34;
+
+$sub-title-c: #E5E5E5;
+$text-c: #CBCBCB;
+$main-title-c: #EB626B;
+
+%d-flex {
+    display: flex;
+   
+  }
+
+%title-h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: left;
+    color: #E5E5E5;
+}
