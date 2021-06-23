@@ -14,3 +14,12 @@ body{
     background-color: $main-bg;
     margin: 15px;
 }
+
+
+@media screen and (min-width:1200px) {
+    body{
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}

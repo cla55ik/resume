@@ -9,6 +9,8 @@ $main-title-c: #EB626B;
    
   }
 
+
+
 %title-h1{
     font-family: 'Open Sans';
     font-style: normal;
@@ -17,4 +19,10 @@ $main-title-c: #EB626B;
     line-height: 38px;
     text-align: left;
     color: #E5E5E5;
+
+    @media screen and (min-width:1200px) {
+        font-size: 48px;
+        line-height: 65px;
+        
+    }
 }
