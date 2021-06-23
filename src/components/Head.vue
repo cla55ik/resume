@@ -7,7 +7,7 @@
         <hr size=5px width=80px align="left" color="#CE864B">
     </div>
     <div class="img">
-        <img src="@/assets/img/ivan-photo.jpg" alt="">
+        <img src="@/assets/img/ivan-p2.png" alt="">
     </div>
     <div class="text">
         <h1>Иван<br> Челноков</h1>
@@ -28,6 +28,7 @@ export default{
 <style scoped lang="scss">
 @import "@/assets/variables.scss";
     div.typewriter{
+        font-family: 'Source Code Pro', monospace !important;
         color: #fff;
         text-align: left;
         

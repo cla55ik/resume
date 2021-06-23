@@ -31,7 +31,7 @@ $orange:#CE864B;
 %resume-title{
     
     color: $main-title-c;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
@@ -48,7 +48,7 @@ $orange:#CE864B;
 %resume-title-before{
     margin-top:35px;
     color: $sub-title-c;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
@@ -62,6 +62,7 @@ $orange:#CE864B;
 }
 
 %resume-experience-period{
+    font-family: 'Source Code Pro', monospace;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -87,8 +88,8 @@ $orange:#CE864B;
 }
 
 %resume-experience-description{
-    
-    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 14px;
     line-height: 19px;
     color: $sub-title-c;
@@ -117,6 +118,7 @@ $orange:#CE864B;
 
 
 %skills{
+    
     color: $sub-title-c;
     font-weight: 600;
     font-size: 20px;

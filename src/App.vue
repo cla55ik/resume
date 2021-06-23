@@ -2,23 +2,25 @@
   
   <Head />
   <Resume/>
+  <Projects/>
 </template>
 
 <script>
 import Head from '@/components/Head.vue'
 import Resume from '@/components/Resume.vue'
+import Projects from '@/components/Projects.vue'
 
 export default {
   name: 'App',
   components: {
-    Head, Resume
+    Head, Resume,Projects
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
