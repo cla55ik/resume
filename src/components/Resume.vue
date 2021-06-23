@@ -196,10 +196,10 @@
     
 
     .contact .text, .contact .text a{
-        width: 90%;
+        width: 85%;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 27px;
+        font-size: 18px;
+        line-height: 26px;
         text-decoration: none;
         color: #E5E5E5;
     }
@@ -220,7 +220,12 @@
     }
 
     .contact .img{
-        width: 10%;
+        width: 15%;
+    }
+
+    .contact .img img{
+        width: 50%;
+        
     }
 
 
@@ -233,6 +238,22 @@
         .resume-wrapper{
             margin-top:40px;
             margin-bottom:50px;
+        }
+
+        .contact .text, .contact .text a{
+            width: 90%;
+            font-size: 20px;
+            line-height: 27px;
+            
+        }
+
+        .contact .img{
+            width: 10%;
+        }
+
+
+        .contact .img img{
+            width: 100%;
         }
     }
 
