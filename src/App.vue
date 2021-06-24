@@ -2,6 +2,7 @@
   
   <Head />
   <Resume/>
+  <MyWay/>
   <Projects/>
   <Footer/>
 </template>
@@ -13,13 +14,14 @@ import Head from '@/components/Head.vue'
 import Resume from '@/components/Resume.vue'
 import Projects from '@/components/Projects.vue'
 import Footer from '@/components/Footer.vue'
+import MyWay from '@/components/MyWay.vue'
 
 
 
 export default {
   name: 'App',
   components: {
-    Head, Resume,Projects,Footer
+    Head, Resume,Projects,Footer,MyWay,
   },
   
 }

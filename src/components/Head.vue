@@ -39,6 +39,10 @@ export default{
         @extend %d-flex;
         margin-top: 25px;
         align-items: center;
+        background-color: #1A1D23;
+        padding: 20px 25px;
+        border-radius: 10px;
+        filter: drop-shadow(2px 4px 5px rgba(26, 29, 35, 0.25));
     }
 
     .head-img-text .img img{
@@ -94,8 +98,12 @@ export default{
         }
 
         .head-img-text{
+            padding: 30px 40px;
             
-            margin-top: 90px;
+        }
+
+        .typewriter{
+            margin-top: 50px;
         }
 
         

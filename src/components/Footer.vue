@@ -26,6 +26,7 @@ export default {
 
 <style scoped>
     .footer-wrapper{
+        background-color: #1A1D23;
         display: flex;
         flex-wrap: wrap;
         margin-top: 40px;
@@ -33,8 +34,10 @@ export default {
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
-
+        border-radius: 10px;
+        padding: 20px 25px;
         color: #E5E5E5;
+        filter: drop-shadow(2px 4px 5px rgba(26, 29, 35, 0.25));
     }
 
    
@@ -49,5 +52,12 @@ export default {
         text-align: right;
     }
 
+
+    @media screen and (min-width:1200px){
+        .footer-wrapper{
+            margin: 70px 0px 30px 0px;
+            padding: 30px 40px;
+        }
+    }
     
 </style>
