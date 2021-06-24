@@ -94,7 +94,7 @@ export default {
         box-shadow: 2px 2px 10px rgba(206, 134, 75, 0.6);
     }
 
-    .projects-items-wrapper .item .img{
+    .projects-items-wrapper .item .img img{
         width: 100%;
     }
 
