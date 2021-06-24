@@ -95,7 +95,10 @@ export default {
     }
 
     .projects-items-wrapper .item .img img{
-        width: 100%;
+         max-width: 100%;
+        border-radius: 5px;
+        filter: drop-shadow(2px 4px 5px rgba(26, 29, 35, 0.25));
+        margin-bottom: 10px;
     }
 
     .projects-items-wrapper .item .data{
@@ -201,9 +204,8 @@ export default {
         }
 
         .projects-items-wrapper .item .img img{
-            max-width: 100%;
-            border-radius: 5px;
-            filter: drop-shadow(2px 4px 5px rgba(26, 29, 35, 0.25));
+           
+            margin-bottom: 0px;
         }
 
         .projects-items-wrapper .item .data{
