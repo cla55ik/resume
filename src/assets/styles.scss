@@ -22,8 +22,9 @@ body{
     margin: 15px;
 }
 
-
-
+.line-orange{
+    display: none;
+}
 
 
 
@@ -32,5 +33,17 @@ body{
         max-width: 1180px;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .line-orange{
+        display: block;
+        
+    }
+
+    .orange-right{
+        margin-left: 5%;
+    }
+    .orange-left{
+        margin-right: 5%;
     }
 }

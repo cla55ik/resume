@@ -74,9 +74,7 @@ export default{
         align-content: flex-end;
     }
 
-    .line-orange{
-        display: none;
-    }
+   
         
 
     @media screen and (min-width:1200px) {
@@ -100,17 +98,7 @@ export default{
             margin-top: 90px;
         }
 
-        .line-orange{
-            display: block;
-            
-        }
-
-        .orange-right{
-            margin-left: 5%;
-        }
-        .orange-left{
-            margin-right: 5%;
-        }
+        
 
     }
 
