@@ -11,25 +11,32 @@
     </div>
 </div>
 <div class="projects-items-wrapper">
-    <div class="item" v-for="(proj, index) in projects" :key="index">
-        <div class="img">
-            <img :src="require(`../assets/img/${proj.img}.jpg`)" alt="">
-        </div>
-        <div class="data">
-            <h3>{{ proj.name }}</h3>
-            <p class="desc">{{ proj.desc }}</p>
-            <p class="stack-title">Стек технологий</p>
-            <p class="stack">{{ proj.stack }}</p>
-            <div class="project-links">
-                <div class="link-site" v-show="proj.link">
-                    <a :href="proj.link" target="_blank"><span>перейти на сайт</span> <img src="@/assets/img/arrow-proj.svg" alt=""></a>
+    <div  v-for="(proj, index) in projects" :key="index" >
+        <div  class="item" v-show="index <= projCount">
+            
+             <div class="img">
+                <img :src="require(`../assets/img/${proj.img}.jpg`)" alt="">
+            </div>
+            <div class="data">
+                <h3>{{ proj.name }}</h3>
+                <p class="desc">{{ proj.desc }}</p>
+                <p class="stack-title">Стек технологий</p>
+                <p class="stack">{{ proj.stack }}</p>
+                <div class="project-links">
+                    <div class="link-site" v-show="proj.link">
+                        <a :href="proj.link" target="_blank"><span>перейти на сайт</span> <img src="@/assets/img/arrow-proj.svg" alt=""></a>
+                    </div>
+                    <div class="link-git" v-show="proj.git">
+                        <a  :href="proj.git" target="_blank">проект на GitHub</a>
+                    </div>
+                    
                 </div>
-                <div class="link-git" v-show="proj.git">
-                    <a  :href="proj.git" target="_blank">проект на GitHub</a>
-                </div>
-                
             </div>
         </div>
+       
+    </div>
+    <div class="show-more">
+        <button v-on:click="showMore" v-show="!showMoreHide">Показать еще</button>
     </div>
 </div>
     
@@ -39,6 +46,8 @@
 export default {
     data:function(){
         return {
+            projCount:3,
+            showMoreHide: false,
             projects:[
                 {name:'Салон окон Rehau', desc:'Сайт оконной компании', stack:'PHP, HTML, Bootstrap, Vue.js, JavaScript, MySQL', link: 'https://dev.vseokna36.ru/', git:'https://github.com/cla55ik/vseokna36', img:'pro-1'},
                 {name:'WeddingCat', desc:'Путеводитель по свадебному дню', stack:'Vue.js, HTML, CSS', link: 'https://weddingcat.site/', git:'https://github.com/cla55ik/wedding', img:'pro-2'},
@@ -52,6 +61,23 @@ export default {
                 {name:'IMPROOVEBOOST', desc:'Интернет-магазин дополнений WoW', stack:'WordPress, HTML, CSS', link: 'https://improveboost.com/', git:'', img:'pro-10'},
             ]
         };
+    },
+    methods:{
+        showMore:function(){
+            let length = this.projects.length -1;
+
+            if (this.projCount < length) {
+                this.projCount = this.projCount + 3;
+            }
+            
+            if (this.projCount >= length){
+                this.showMoreHide = true;
+            }
+            console.log(length);
+            console.log(this.projCount);
+            console.log(this.showMoreHide);
+            return;
+        },
     },
     
 }
@@ -176,8 +202,35 @@ export default {
 
         color: #E5E5E5;
 
+
     }
-  
+
+     .show-more button {
+
+            font-family: 'Open Sans';
+            background: $main-title-c;
+            color: $sub-title-c;
+            border-radius: 5px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+            border:none;
+
+            padding: 7px 35px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+
+
+        .show-more button:hover{
+            cursor: pointer;
+            background: #BB373F;
+            box-shadow: 2px 2px 7px rgba(235, 98, 107, 0.6);
+        }
+
 
     @media screen and (min-width:1200px) {
         .projects-title-wrapper{
@@ -228,6 +281,16 @@ export default {
 
         .link-site img{
             height: 15px;
+        }
+
+        .show-more button {
+            font-size: 20px;
+            line-height: 28px;
+            
+
+            padding: 7px 35px;
+            margin-top: 40px;
+            margin-bottom: 50px;
         }
         
     }
