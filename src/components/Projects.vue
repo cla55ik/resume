@@ -15,7 +15,7 @@
         <div  class="item" v-show="index <= projCount">
             
              <div class="img">
-                <img :src="require(`../assets/img/${proj.img}.jpg`)" alt="">
+                <img :src="require(`../assets/img/${proj.img}-min.jpg`)" alt="">
             </div>
             <div class="data">
                 <h3>{{ proj.name }}</h3>
