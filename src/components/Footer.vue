@@ -38,6 +38,7 @@ export default {
         padding: 20px 25px;
         color: #E5E5E5;
         filter: drop-shadow(2px 4px 5px rgba(26, 29, 35, 0.25));
+        align-items: center;
     }
 
    
@@ -45,6 +46,8 @@ export default {
     .developer {
         text-align: left;
         width: 20%;
+        display: flex;
+        align-items: center;
     }
 
     .contacts{
